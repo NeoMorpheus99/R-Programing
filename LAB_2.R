@@ -10,27 +10,26 @@
 # cat("Fahrenheit : ", fahrenheit)
 
 
-#q3: Program to Calculate the compound interest (Rervisit this problem)
-principle <- as.integer(readline("Enter Principle: "))
-term <- as.integer(readline("Enter the Term of the loan: "))
-rate <- as.integer(readline("Enter Rate of Interest in decimal: "))
-frequency <- as.integer(readline("Enter the frequecy of the interest: "))
-compound <- principle * (1 + rate  / frequency) ^ (frequency * term)
-interest <- compound - principle
-cat("Total Amount: ", compound, "Interest Earned: ", interest)
+# #q3: Program to Calculate the compound interest (Rervisit this problem)
+# principle <- as.integer(readline("Enter Principle: "))
+# term <- as.integer(readline("Enter the Term of the loan: "))
+# rate <- as.integer(readline("Enter Rate of Interest in decimal: "))
+# frequency <- as.integer(readline("Enter the frequecy of the interest: "))
+# compound <- principle * (1 + rate  / frequency) ^ (frequency * term)
+# interest <- compound - principle
+# cat("Total Amount: ", compound, "Interest Earned: ", interest)
 
 #q4 swap numbers without using third variable
+x <- as.integer(readline("number 1: "))
+y <- as.integer(readline("Number 2: "))
 
-# x <- as.integer(readline("number 1: "))
-# y <- as.integer(readline("Number 2: "))
+x <- (x + y)
+y <- x - y
+x <- x - y
 
-# x <-(x+y)
-# y <- x-y
-# x<- x-y
-
-# print("After exchanging :")
-# print(x)
-# print(y)
+print("After exchanging :")
+print(x)
+print(y)
 
 # #Q5 : applying all relational operator
 # x <- as.integer(readline("Enter 1st number: "))
