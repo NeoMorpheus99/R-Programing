@@ -27,6 +27,20 @@ print(arr[,3,1])
 
 
 #Q4
+# Create three sample arrays
+array1 <- matrix(1:4, nrow = 1)
+array2 <- matrix(5:8, nrow = 1)
+array3 <- matrix(9:12, nrow = 1)
+ 
+# Combine the arrays by row
+combined_array <- rbind(array1, array2, array3)
+
+# Print the combined array
+print(combined_array)
+
+
+
+
 
 #Q5
 cat("\n list with multiple value\n")
@@ -39,7 +53,7 @@ print(home)
 mixed_list<- list(c("Male","Female","Other"), matrix(c(2,3,5,7,11,13,19,21,23), nrow = 3), list("apple","peach",4,5))
 names(mixed_list) <- c("Gender", "Prime", "Order")
 print(mixed_list [1])
-print(mixed_list[2])
+print(mixed_list [2])
 
 #Q8
 mixed_list<- list(c("Male","Female","Other"), matrix(c(2,3,5,7,11,13,19,21,23), nrow = 3), list("apple","peach",4,5))
@@ -59,7 +73,7 @@ print(v1+v2)
 print(v1-v2)
 print(v1*v2)
 
-#Q10
+Q10
 print(length(mixed_list))
 
 #Q11
