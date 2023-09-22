@@ -28,7 +28,7 @@ cat("\nQ5. add a new column in a given data frame\n")
 Newdf = cbind(df, data.frame(Animal = "DOG"))
 print(Newdf)
 
-#Q6 add new row(s) to an existing data frame
+Q6 add new row(s) to an existing data frame
 cat("\nQ6. add a new row in a given data frame\n")
 df = rbind(df, data.frame(name="rock",
                           age="78",
@@ -64,12 +64,12 @@ dataBase = data.frame(
   "Name" = c("john", "Cena", "Rock", "Khali", "HBK", "Shean"),
   "Dept" = c("CSE", "DSA", "Civil", "EEE", "HA", "Meds"),
   "course" = c("DSA", "OOP", "Python", "CPP", "OK", "Math"),
-  "year" = c(2005,2004,2006,2007,2008,2009)
+  "year" = c(2005,2004,2005,2004,2007,2009)
 )
 print(dataBase)
 
 cat("\nQ11.1. Student DataBase joined in the year 2008\n")
-yearjoined <- subset(dataBase, year == 2008)
+yearjoined <- subset(dataBase, year == 2005)
 print(yearjoined)
 
 
@@ -77,5 +77,17 @@ cat("\nQ11.2. Student DataBase based on roll No\n")
 RollData <- subset(dataBase, Roll_Number > 20)
 print(RollData)
 
+student <- data.frame(
+  "name" = c("Amit", "Meera", "Raj", "Saan", "Lilly"),
+  "age" = c(25, 27, 26, 30, 24), 
+  "height" = c(168, 170, 167, 172, 166),
+  "weight" = c(57, 62, 56, 65, 56),
+  "gender" = as.factor(c("M", "F", "M", "M", "F"))
+  )
+ 
 
+print(student)
 
+levels(student$gender) <-c("M", "F")
+
+print(student)
